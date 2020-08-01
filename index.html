@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biblioteca Heaven</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="images/libros2.png">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+
+
+	<!-- PWA desde aqui segun el video-->
+        <!-- Para pintar de color la barra de navegador de un navegador-->
+        <meta name="theme-color" content="#222">
+        <!-- Para decirle a los navegadores que tu sitio esta optimizado para moviles y que el sitio es amigable -->
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <!-- PWA para apple-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- icono-->
+        <link rel="shortcut icon" type="image/png" href="images/ico/16.png">
+        <!-- Pantalla de inicio-->
+        <link rel="apple-touch-icon" href="images/ico/ico.png">
+        <link rel="apple-touch-startup-image" href="images/ico/ico.png">
+        <!-- importante -->
+		<link rel="manifest" href="manifest.json">
+
+
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>VIRGINIA <span class="bp-icon bp-icon-about" data-content="Hay tres cosas que cada persona debería hacer durante su vida: plantar un árbol, tener un hijo y escribir un libro"></span></span>
+			<h1>Libros Favoritos</h1>
+			
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/qw.png" alt="libro1"/>
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Jhosua Harris</span> Le dije adios a las citas amorosas</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/c1.png" alt="libro2" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Oliver Sacks</span> El hombre que confundio <br> a su mujer con un sombrero</h2>
+			</div>
+			<!-- <div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/libros2.png" alt="MacBook" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Amazing</span> MacBook</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/libros3.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Glorious</span> iMac</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/apple-watch.png" alt="Apple Watch" />
+						<div class="preview rounded">
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Fabulous</span> Apple Watch</h2>
+			</div> -->
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/qw.png" alt="libro1" />
+				<div class="content__item-inner">
+					<h2>Jhosua Harris</h2>
+					<h3>Le dije adios a las citas amorosas</h3>
+					<p>Hola
+						.Ya sé lo que estas pensando. ―voy a pasar
+						 por alto esta primeras páginas yme introduzco de lleno
+						a le médula del asunto‖.
+						 Espera un momento. No te apresures. Este prefacio es parte de la preparaciónnecesaria 
+						 para lo que vas a leer.En realidad, de esto precisamente se trata este libro-. 
+						 Los conceptos y las ideasque encontrarás en estas páginas son bastantes revolucionarias. 
+						 Estoy contenta de queeste libro haya llegado a tus manos, ya que tiene el poder para 
+						 liberarte de muchaagonía innecesaria. El mismo posee la habilidad y el potencial de cambiara 
+						 la manerade pensar de toda una generación. De hecho, ya ha afectado mi propia vida.Permíteme 
+						 explicar a lo que me refiero.Hace bastante tiempo que comparto la misma opinión respecto a las 
+						 citas que tiene Josh (El autor de este libro y amigo mío). Tiene que ver con alguien que 
+						 expresorecientemente ¿Porque ir de compras si no vas a comparar nada? Precisamente 
+						 ¿Porqué insistir en salir con una chica o un chico e una cita amorosa, sino te puedes casartodavía?..
+						 Tengo 19 años y aunque nunca he salido en una cita, si he adquirido através de los años mucha 
+						 experiencia, al ver a mis amigos involucraos en el juego. Ycréanme que realmente es un juego, y 
+						 no es tan divertido como parece. Al contrarioparece ser algo doloroso y agonizante y es por esta 
+						 razón que he decidido esperar.En segundo lugar, estoy segura de que aún no es el tiempo de Dios 
+						 para mi vida.Tener un novio me causaría grandes distracciones, puedo entretenerme con otrascosas y 
+						 dejar de cumplir la obra que Dios quiere que yo desempeñe durante estosaños.También soy partidaria 
+						 de la siguiente filosofía: a mi edad, es más divertido andar engrupo que estar involucrada en una 
+						 relación personal
+						…
+						Hace algunos días comencé asentirme algo desanimada, al pensar que no tenía a nadie con quien 
+						soñar y paraquien vestirme bonita. Fue entonces cuando leí este libro y sentí como que Dios 
+						medaba ánimo por medio de las palabras de Josh. No creo haber leído un libro donde elautor es 
+						tan honesto y real como es Josh en este. Él trata directamente con los asuntos y preguntas 
+						difíciles al hablar sobre este confuso tema ¿debo tener novio o no? Elautor ofrece respuestas 
+						muy prácticas a preguntas como estas. Joshua Harriscomparte su experiencia personal de manera 
+						muy poderosa; ya que también es un joven, conoce de cerca el tema.Una de las cosas que más 
+						gusta sobre el escrito de Josh es la manera que lleva todo ala palabra de Dios, y como nosotros 
+						podemos vivir dirigidos por sus enseñanzas. Ycomo lo conozco desde hace 2 años, verdaderamente 
+						puedo decir que tal como loescribe, así lo vive. Así que prepárate a ser retado y alentado y 
+						debes tambiénprepararte para que tu punto de vista sobre el tema sea grandemente ampliado.
+						Gracias por seguir atento… que disfrutes
+						mucho.¡Permanece firme!...Rebeca St. Jame</p>
+					<p align="center"><a href="libro1.html">Disfruta el libro aqui &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/c.png" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>Oliver Sacks</h2>
+					<h3>El hombre que confundio a su mujer con un sombrero</h3>
+					<p>En este libro, Oliver Sacks narra veinte historiales médicos de pacientes perdidos en el mundo extraño
+					y aparentemente irremediable de las enfermedades neurológicas. Se trata de casos de individuos, aquejados 
+					por inauditas aberraciones de la percepción que han perdido la memoria, y con ella, la mayor parte de su 
+					pasado; que son incapaces de reconocer a sus familiares o los objetos cotidianos; que han sido descartados 
+					como retrasados mentales y que, sin embargo, poseen insólitos dones artísticos o científicos. Por extraños 
+					que parezcan estos casos, el doctor Sacks los relata con pasión humana y gran talento literario. Son estudios 
+					que nos permiten acceder al universo de los enfermos nerviosos y comprender su situación frente a las 
+					adversidades. Como gran médico, Oliver Sacks nunca pierde de vista el cometido final de la medicina: 
+					«el sujeto humano que sufre y lucha».</p>
+					<p align="center"><a href="libro2.html">Disfruta el libro aqui &xrarr;</a></p>
+				</div>
+			</div>
+			<!-- <div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/libros2.png" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2>The MacBook</h2>
+					<h3>It's the future of the notebook</h3>
+					<p>With the new MacBook, we set out to do the impossible: engineer a full-size experience into the lightest and most compact Mac notebook ever. That meant reimagining every element to make it not only lighter and thinner but also better. The result is more than just a new notebook. It's the future of the notebook.</p>
+					<p><a href="https://www.apple.com/macbook/design/">Learn more about the design &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/libros3.png" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>The iMac</h2>
+					<h3>Engineered to the very last detail</h3>
+					<p>Every new Mac comes with Photos, iMovie, GarageBand, Pages, Numbers, and Keynote. So you can be creative with your photos, videos, music, documents, spreadsheets, and presentations right from the start. You also get great apps for email, surfing the web, sending texts, and making FaceTime calls — there’s even an app for finding new apps.</p>
+					<p><a href="https://www.apple.com/imac/built-in-apps/">Learn more about the iMac's features &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/apple-watch-content.png" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>The Apple Watch</h2>
+					<h3>Entirely new ways to stay in touch</h3>
+					<p>Apple Watch makes all the ways you're used to communicating more convenient. And because it sits right on your wrist, it can add a physical dimension to alerts and notifications. For example, you’ll feel a gentle tap with each incoming message. Apple Watch also lets you connect with your favorite people in fun, spontaneous ways — like sending a tap, a sketch, or even your heartbeat. </p>
+					<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Learn more about new ways to connect &xrarr;</a></p>
+				</div>
+			</div> -->
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
